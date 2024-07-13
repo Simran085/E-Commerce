@@ -17,7 +17,7 @@ const ShopContextProvider = (props) => {
 
     useEffect(() => {
         // Fetch all products
-        fetch('http://localhost:4000/allproducts')
+        fetch('https://e-commerce-backend-ir0x.onrender.com/allproducts')
             .then((response) => response.json())
             .then((data) => setAll_Product(data))
             .catch((error) => console.error('Error fetching products:', error));
@@ -26,7 +26,7 @@ const ShopContextProvider = (props) => {
         const authToken = localStorage.getItem('auth-token');
         if (authToken) {
             // Fetch cart data
-            fetch('http://localhost:4000/getcart', {
+            fetch('https://e-commerce-backend-ir0x.onrender.com/getcart', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const ShopContextProvider = (props) => {
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}));
         // console.log(cartItems);
         if(localStorage.getItem('auth-token')) {
-            fetch('http://localhost:4000/addtocart', {
+            fetch('https://e-commerce-backend-ir0x.onrender.com/addtocart', {
                 method: 'POST',
                 headers: {
                     Accept:'application/form-data',
