@@ -40,7 +40,6 @@ app.post("/upload",upload.single('product'), (req, res) => {
         success: 1,
         image_url: `https://e-commerce-backend-ir0x.onrender.com/images/${req.file.filename}`
     })
-    })
 })
 
 //Create an endpoint- to add the product in MongoDB Atlas 
