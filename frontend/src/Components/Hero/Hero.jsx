@@ -1,10 +1,14 @@
 import React from 'react'
 import './Hero.css'
-import hand_icon from '../Assets/hand_icon.png'
-import arrow_icon from '../Assets/arrow.png'
-import hero_img from '../Assets/hero_image.png'
+// import hand_icon from '../Assets/hand_icon.png'
+// import arrow_icon from '../Assets/arrow.png'
+// import hero_img from '../Assets/hero_image.png'
 
 const Hero = () => {
+    const hand_icon = process.env.PUBLIC_URL + '/Assets/hand_icon.png';
+    const arrow_icon = process.env.PUBLIC_URL + '/Assets/arrow.png';
+    const hero_img = process.env.PUBLIC_URL + '/Assets/hero_image.png';
+
   return (
     <div className='hero'>
         <div className="hero-left">

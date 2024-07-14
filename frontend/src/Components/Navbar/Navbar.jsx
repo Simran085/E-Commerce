@@ -1,13 +1,17 @@
 import React, {useContext, useRef, useState} from 'react'
 import './Navbar.css'
 
-import logo from '../Assets/logo.png'
-import cart_icon from '../Assets/cart_icon.png'
+// import logo from '../Assets/logo.png'
+// import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
-import nav_dropdown from '../Assets/nav_dropdown.png'
+// import nav_dropdown from '../Assets/nav_dropdown.png'
 
 const Navbar = () => {
+    const logo = process.env.PUBLIC_URL + '/Assets/logo.png';
+    const cart_icon = process.env.PUBLIC_URL + '/Assets/cart_icon.png';
+    const nav_dropdown = process.env.PUBLIC_URL + '/Assets/nav_dropdown.png';
+
 
     const [menu, setMenu] = useState("Shop");
     const {getTotalCartItems} = useContext(ShopContext);

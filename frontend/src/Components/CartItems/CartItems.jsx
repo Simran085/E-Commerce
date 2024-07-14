@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import './CartItems.css'
 import { ShopContext } from './../../Context/ShopContext';
-import remove_icon from '../Assets/cart_cross_icon.png'
+// import remove_icon from '../Assets/cart_cross_icon.png'
 
 const CartItems = () => {
   const{getTotalCartAmount, all_product, cartItems, removeFromCart} = useContext(ShopContext);
+  const remove_icon = process.env.PUBLIC_URL + '/Assets/cart_cross_icon.png';
+
   return (
     <div className='cartitems'>
       <div className="cartitems-format-main">

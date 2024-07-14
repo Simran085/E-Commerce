@@ -1,8 +1,9 @@
 import React from 'react'
 import './Offers.css'
-import exclusive_image from '../Assets/exclusive_image.png'
+// import exclusive_image from '../Assets/exclusive_image.png'
 
 const Offers = () => {
+  const exclusive_image = process.env.PUBLIC_URL + '/Assets/exclusive_image.png';
   return (
     <div className='offers'>
         <div className="offers-left">

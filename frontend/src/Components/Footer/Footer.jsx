@@ -1,11 +1,16 @@
 import React from 'react'
 import './Footer.css'
-import footer_logo from '../Assets/logo_big.png'
-import instagram_icon from '../Assets/instagram_icon.png'
-import pintester_icon from '../Assets/pintester_icon.png'
-import whatsapp_icon from '../Assets/whatsapp_icon.png'
+// import footer_logo from '../Assets/logo_big.png'
+// import instagram_icon from '../Assets/instagram_icon.png'
+// import pintester_icon from '../Assets/pintester_icon.png'
+// import whatsapp_icon from '../Assets/whatsapp_icon.png'
 
 const Footer = () => {
+    const footer_logo = process.env.PUBLIC_URL + '/Assets/logo_big.png';
+const instagram_icon = process.env.PUBLIC_URL + '/Assets/instagram_icon.png';
+const pintester_icon = process.env.PUBLIC_URL + '/Assets/pintester_icon.png';
+const whatsapp_icon = process.env.PUBLIC_URL + '/Assets/whatsapp_icon.png';
+
   return (
     <div className='footer'>
         <div className="footer-logo">
