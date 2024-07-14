@@ -6,6 +6,8 @@ import Item from '../Components/Item/Item'
 
 const ShopCategory = (props) => {
   const {all_product} = useContext(ShopContext);
+  const imagePath = process.env.PUBLIC_URL + `/Assets/${product.image}`;
+
 
   return (
     <div className='shop-category'>
