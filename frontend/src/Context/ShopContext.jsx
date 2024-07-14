@@ -72,7 +72,7 @@ const ShopContextProvider = (props) => {
         });
 
         if (localStorage.getItem('auth-token')) {
-            fetch('http://localhost:4000/removefromcart', {
+            fetch('https://e-commerce-backend-ir0x.onrender.com/removefromcart', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/form-data',
